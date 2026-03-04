@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>KC Paan</title>
+    <style>
+        /*
+       * SCROLL FIX for React Native Web
+       * On web, html/body default to height:auto which means flex:1 containers
+       * expand infinitely — so ScrollView never has a bounded area to scroll within.
+       * Setting height:100% on these elements gives the RN layout engine a real
+       * viewport constraint, exactly like the OS provides on mobile.
+       */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #root {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
